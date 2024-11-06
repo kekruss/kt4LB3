@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Панель меню Windows 8.0</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #4c1e7e;
+            margin: 0;
+            padding: 20px;
+        }
+
+        .header {
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            margin-bottom: 100px;
+        }
+
+        .user-name {
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .menu {
+            display: grid;
+            grid-template-columns: repeat(5, 1fr);
+            gap: 15px;
+        }
+
+        .tile {
+            color: white;
+            padding: 10px;
+            text-align: left;
+            border-radius: 10px;
+            transition: transform 0.2s;
+            cursor: pointer;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+            position: relative;
+            height: 10px; 
+        }
+
+        .tile1 { background-color: #0078d7; height: 150px; }
+        .tile2 { background-color: #ff5733; height: 150px; }
+        .tile3 { background-color: #33ff57; height: 150px; }
+        .tile4 { background-color: #3357ff; height: 120px;  border-radius: 20px; width: 60%;}
+        .tile5 { background-color: #ff33a1; height: 120px;  border-radius: 20px; width: 60%; right: 120px;}
+        .tile6 { background-color: #ffff33; height: 150px; }
+        .tile7 { background-color: #33ffff; height: 150px; }
+        .tile8 { background-color: #a133ff; height: 150px; }
+        .tile9 { background-color: #ff33c4; height: 120px; border-radius: 20px;width: 60%;}
+        .tile10 { background-color: #c4ff33; height: 120px; border-radius: 20px;width: 60%;right: 120px;}
+        .tile11 { background-color: #33c4ff; height: 150px; }
+        .tile12 { background-color: #ff5733; height: 150px; }
+        .tile13 { background-color: #33ff57; height: 150px; }
+        .tile14 { background-color: #3357ff; height: 120px; border-radius: 20px;width: 60%;}
+        .tile15 { background-color: #ff33a1; height: 120px; border-radius: 20px;width: 60%;right: 120px;}
+        .tile16 { background-color: #ffff33; height: 150px; }
+        .tile17 { background-color: #33ffff; height: 150px; }
+        .tile18 { background-color: #a133ff; height: 150px; }
+        .tile19 { background-color: #ff33c4; height: 150px; border-radius: 20px;width: 135%;}
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="user-name">Имя Пользователя</div>
+        <div class="user-icon">👤</div>
+    </div>
+    
+    <div class="menu">
+      <div class="tile tile1" style="background-image: url('https://i.pinimg.com/564x/87/15/ca/8715cae0b7ee6248a1818117034aaba6.jpg');">
+          <div class="tile-title">Пуск </div>
+      </div>
+      <div class="tile tile2" style="background-image: url('https://i.pinimg.com/564x/d1/73/c6/d173c692996a4b9170f08dcf88ec6932.jpg');">
+          <div class="tile-title">Программы </div>
+      </div>
+      <div class="tile tile3" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Файлы </div>
+      </div>
+      <div class="tile tile4" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Игры </div>
+      </div>
+      <div class="tile tile5" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Музыка </div>
+      </div>
+      <div class="tile tile6" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Фото </div>
+      </div>
+      <div class="tile tile7" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Видео </div>
+      </div>
+      <div class="tile tile8" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Календарь </div>
+      </div>
+      <div class="tile tile9" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Почта </div>
+      </div>
+      <div class="tile tile10" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Картинки </div>
+      </div>
+      <div class="tile tile11" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Документы </div>
+      </div>
+      <div class="tile tile12" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Часы </div>
+      </div>
+      <div class="tile tile13" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Калькулятор </div>
+      </div>
+      <div class="tile tile14" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Новости </div>
+      </div>
+      <div class="tile tile15" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Спорт </div>
+      </div>
+      <div class="tile tile16" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Погода </div>
+      </div>
+      <div class="tile tile17" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Социальные сети </div>
+      </div>
+      <div class="tile tile18" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Заметки </div>
+      </div>
+      <div class="tile tile19" style="background-image: url('https://i.pinimg.com/564x/5f/36/c2/5f36c2bdd3b58a5e9bd82c32e71a092e.jpg');">
+          <div class="tile-title">Уведомления </div>
+      </div>
+  </div>
+</body>
+</html>
